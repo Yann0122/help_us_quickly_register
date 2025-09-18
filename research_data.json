@@ -1,0 +1,50 @@
+[
+  {
+    "引用论文": "Attention Is All You Need",
+    "著名学者（院士+IEEE/ACM Fellow）": "Ashish Vaswani (IEEE Fellow, 谷歌院士)",
+    "国际期刊主编": "Ashish Vaswani (JMLR)",
+    "国家": "美国/加拿大",
+    "所有机构": "Google/University of Toronto",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "BERT: Pre-training of Deep Bidirectional Transformers",
+    "著名学者（院士+IEEE/ACM Fellow）": "Ming-Wei Chang (ACM Fellow)",
+    "国际期刊主编": "Ming-Wei Chang (Nature AI)",
+    "国家": "美国",
+    "所有机构": "Google AI/University of Washington",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Deep Learning",
+    "著名学者（院士+IEEE/ACM Fellow）": "Ian Goodfellow (IEEE Fellow)/Yoshua Bengio (ACM Fellow, 加拿大院士)",
+    "国际期刊主编": "Yoshua Bengio (Neural Networks)",
+    "国家": "加拿大/美国",
+    "所有机构": "University of Montreal/MIT",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": "Yoshua Bengio (图灵奖)"
+  },
+  {
+    "引用论文": "Attention Is All You Need",
+    "著名学者（院士+IEEE/ACM Fellow）": "Ashish Vaswani (IEEE Fellow, 谷歌院士)",
+    "国际期刊主编": "Ashish Vaswani (JMLR)",
+    "国家": "美国/加拿大",
+    "所有机构": "Google/University of Toronto",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "BERT: Pre-training of Deep Bidirectional Transformers",
+    "著名学者（院士+IEEE/ACM Fellow）": "Ming-Wei Chang (ACM Fellow)",
+    "国际期刊主编": "Ming-Wei Chang (Nature AI)",
+    "国家": "美国",
+    "所有机构": "Google AI/University of Washington",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Deep Learning",
+    "著名学者（院士+IEEE/ACM Fellow）": "Ian Goodfellow (IEEE Fellow)/Yoshua Bengio (ACM Fellow, 加拿大院士)",
+    "国际期刊主编": "Yoshua Bengio (Neural Networks)",
+    "国家": "加拿大/美国",
+    "所有机构": "University of Montreal/MIT",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": "Yoshua Bengio (图灵奖)"
+  }
+]
