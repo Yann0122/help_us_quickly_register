@@ -68,9 +68,9 @@ class DataRecorder:
                 if fellow_parts:
                     fellow_str = f"{name} ({', '.join(fellow_parts)})"
                     fellow_names.append(fellow_str)
-        
-        self.current_entry["著名学者（院士+IEEE/ACM Fellow）"] = "/".join(fellow_names) if fellow_names else ""
-        
+
+        self.current_entry["著名学者（院士+IEEE/ACM Fellow）"] = "; ".join(fellow_names) if fellow_names else ""
+
         editor_names = []
         for author_info in authors_list:
             if len(author_info) >= 5:
@@ -80,9 +80,9 @@ class DataRecorder:
                 if journal_editor:
                     editor_str = f"{name} ({journal_editor})"
                     editor_names.append(editor_str)
-        
-        self.current_entry["国际期刊主编"] = "/".join(editor_names) if editor_names else ""
-        
+
+        self.current_entry["国际期刊主编"] = "; ".join(editor_names) if editor_names else ""
+
         honor_names = []
         for author_info in authors_list:
             if len(author_info) >= 5:
@@ -93,17 +93,17 @@ class DataRecorder:
                     honor_str = f"{name} ({honor})"
                     honor_names.append(honor_str)
         
-        self.current_entry["知名荣誉获得者（诺贝尔、图灵奖等）"] = "/".join(honor_names) if honor_names else ""
+        self.current_entry["知名荣誉获得者（诺贝尔、图灵奖等）"] = "; ".join(honor_names) if honor_names else ""
     
     def get_universities(self, universities_list):
         if universities_list:
             filtered_unis = [uni for uni in universities_list if uni and uni.strip()]
-            self.current_entry["所有机构"] = "/".join(filtered_unis) if filtered_unis else ""
+            self.current_entry["所有机构"] = "; ".join(filtered_unis) if filtered_unis else ""
     
     def get_countries(self, countries_list):
         if countries_list:
             filtered_countries = [country for country in countries_list if country and country.strip()]
-            self.current_entry["国家"] = "/".join(filtered_countries) if filtered_countries else ""
+            self.current_entry["国家"] = "; ".join(filtered_countries) if filtered_countries else ""
     
     def finalize_current_entry(self):
         self._finalize_entry()
