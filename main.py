@@ -61,10 +61,10 @@ class DataRecorder:
                 
                 fellow_parts = []
                 if ieee_fellow:
-                    fellow_parts.append(ieee_fellow)
+                    fellow_parts.append(ieee_fellow.strip())
                 if academy_member:
-                    fellow_parts.append(academy_member)
-                
+                    fellow_parts.append(academy_member.strip())
+
                 if fellow_parts:
                     fellow_str = f"{name} ({', '.join(fellow_parts)})"
                     fellow_names.append(fellow_str)
