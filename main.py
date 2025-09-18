@@ -60,9 +60,9 @@ class DataRecorder:
                 academy_member = author_info[2] if author_info[2] else ""
                 
                 fellow_parts = []
-                if ieee_fellow:
+                if ieee_fellow and ieee_fellow.strip():
                     fellow_parts.append(ieee_fellow.strip())
-                if academy_member:
+                if academy_member and academy_member.strip():
                     fellow_parts.append(academy_member.strip())
 
                 if fellow_parts:
@@ -112,6 +112,14 @@ recorder = DataRecorder()
 
 def get_paper_name():
     paper_name = input("Enter the paper name: ")
+    if paper_name.strip().lower() == '':
+        confirm = input("是否确定退出记录页面？y:退出； n:继续记录: ")
+        while confirm.strip().lower() not in ('y', 'n'):
+            confirm = input("无效输入。请输入 y 或 n: ")
+        if confirm.strip().lower() == 'y':
+            exit()
+        else:
+            return get_paper_name()
     return paper_name
 
 def loop_input(prompt):
@@ -120,7 +128,10 @@ def loop_input(prompt):
         value = input(f"Enter what {prompt}, or directly press Enter to finish: ")
         if value.lower() == '':
             break
-        s += value + ", "
+        if s == "":
+            s += value
+        else:
+            s += ", " + value
     return s
         
 
@@ -128,7 +139,7 @@ def get_fellow_authors():
     authors_info = []
     while True:
         author_info = []
-        author_name = input("Enter author name, or directly press Enter to finish: ")
+        author_name = input("Enter author name(作者姓名), or directly press Enter to finish: ")
         if author_name.lower() == '':
             break
         author_info.append(author_name)
@@ -136,9 +147,9 @@ def get_fellow_authors():
         author_info.append(what_fellow)
         what_yuanshi = loop_input("院士")
         author_info.append(what_yuanshi)
-        author_magazine = loop_input("magazine")
+        author_magazine = loop_input("magazine(主编)")
         author_info.append(author_magazine)
-        reward = loop_input("reward")
+        reward = loop_input("reward(奖项)")
         author_info.append(reward)
         authors_info.append(author_info)
         print(f"Finish registering author: {author_name}\nStart registering next author.\n")
