@@ -14,5 +14,277 @@
     "国家": "China",
     "所有机构": "Wuhan University; Harbin Institute of Technology; National Tsing Hua University",
     "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Learning a sparse transformer network for effective image deraining",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "Information Science Academy of China Electronics Technology Group Corporation; Nanjing University of Science and Technology",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Adapt or perish: Adaptive sparse transformer with attentive feature refinement for image restoration",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "Nankai University",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Restoring vision in adverse weather conditions with patch-based denoising diffusion models",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "Austria",
+    "所有机构": "Graz; University of Technology",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Restoring Images in Adverse Weather Conditions via Histogram Transformer",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "University of Chinese Academy of Sciences",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Bidirectional multi-scale implicit neural representations for image deraining",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "Nanjing University of Science and Technology",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Learning weather-general and weather-specific features for image restoration under multiple adverse weather conditions",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": " Shanghai Artificial Intelligence Laboratory; Tsinghua University; University of Science and Technology of China; The Chinese University of Hong Kong",
+    "所有机构": "China",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Fourmer: An Efficient Global Modeling Paradigm for Image Restoration",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "Nanyang Technological University; University of Science and Technology of China; Nankai University",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Ingredient-oriented multi-degradation learning for image restoration",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "University of Science and Technology of China",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Residual denoising diffusion models",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "Chinese Academy of Sciences;  University of Hong Kong",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Multimodal prompt perceiver: Empower adaptiveness generalizability and fidelity for all-in-one image restoration",
+    "著名学者（院士+IEEE/ACM Fellow）": "Ran He (ieee fellow)",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": " Chinese Academy of Sciences; University of Chinese Academy of Sciences; University of Science and Technology of China",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Adaptive frequency filters as efficient global token mixers",
+    "著名学者（院士+IEEE/ACM Fellow）": "Baining Guo (ieee fellow, acm fellow, Royal Society of Canada)",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "University of Science and Technology of China; Microsoft Research Asia",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Refusion: Enabling large-size realistic image restoration with latent-space diffusion models",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "Sweden",
+    "所有机构": "Uppsala University",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Sparse sampling transformer with uncertainty-driven ranking for unified removal of raindrops and rain streaks",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "",
+    "所有机构": "The Hong Kong University of Science and Technology; National University of Singapore;  Jimei University; Xinjiang University; China",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Freqmamba: Viewing mamba from a frequency perspective for image deraining",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "University of Science and Technology of China",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Onerestore: A universal restoration framework for composite degradation",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "Wuhan University of Technology; Jilin University; Singapore Management University",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "PSRT: Pyramid shuffle-and-reshuffle transformer for multispectral and hyperspectral image fusion",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "Gemine Vivone (IEEE Geoscience and Remote Sensing eNewsletter, IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS))",
+    "国家": "China; Italy",
+    "所有机构": "University of Electronic; Science and Technology of ChinaNational Research Council—Institute of Methodologies for Environmental Analysis (CNR-IMAA)",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Trinity-net: Gradient-guided swin transformer-based remote sensing image dehazing and beyond",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "Qi Wang (Remote Sensing)",
+    "国家": "China",
+    "所有机构": "Northwestern Polytechnical University",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Learning diffusion texture priors for image restoration",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China; USA",
+    "所有机构": "The Hong Kong University of Science and Technology; University of Washington; The Hong Kong Polytechnic University",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Dual vision transformer",
+    "著名学者（院士+IEEE/ACM Fellow）": "Tao Mei (ieee fellow, Canadian Academy of Engineering); Xiao-Ping Zhang (ieee fellow, Canadian Academy of Engineering, Engineering Institute of Canada)",
+    "国际期刊主编": "Xiao-Ping Zhang (IEEE Journal of Selected Topics in Signal Processing)",
+    "国家": "",
+    "所有机构": "智象未来; 京东; Ryerson University; China; Canada",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Hybrid cnn-transformer feature fusion for single image deraining",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "Nanjing University of Science and Technology; Shenyang Aerospace University",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Homoformer: Homogenized transformer for image shadow removal",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "University of Science and Technology of China; Alibaba Group",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Adverse weather removal with codebook priors",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "",
+    "所有机构": "",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Improving image restoration through removing degradations in textual representations",
+    "著名学者（院士+IEEE/ACM Fellow）": "Qi Tian (ieee fellow, acm fellow, International Eurasian Academy of Sciences)",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "Harbin Institute of Technology; Huawei",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Wavedm: Wavelet-based diffusion models for image restoration",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": " University of Chinese Academy of Sciences;  The University of Hong Kong",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "U-shaped vision mamba for single image dehazing",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "‌Sun Yat-sen University",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Gridformer: Residual dense transformer with grid structure for image restoration in adverse weather conditions",
+    "著名学者（院士+IEEE/ACM Fellow）": "Wei Liu (ieee fellow)",
+    "国际期刊主编": "",
+    "国家": "China; Japan; UK; Australia",
+    "所有机构": "Nanjing University; Harbin Institute of Technology; Hong Kong University of Science and Technology; Rakuten Institute of Technology; Imperial College London; Tencent; Australian National University",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Teaching tailored to talent: Adverse weather restoration via prompt pool and depth-anything constraint",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "Hong Kong University of Science and Technology; Xiamen University",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "From sky to the ground: A large-scale benchmark and simple baseline towards real rain removal",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "National Key Laboratory of Science and Technology on Multispectral Information Processing; School of Artificial Intelligence and Automation",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Efficient frequency-domain image deraining with contrastive regularization",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "Beihang University",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Frequency-oriented efficient transformer for all-in-one weather-degraded image restoration",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China; Australia",
+    "所有机构": " Chang’an University; Australian National University; Sun Yat-sen University",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "When fast fourier transform meets transformer for image restoration",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "",
+    "所有机构": "Beihang University; China",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Transformers in 3d point clouds: A survey",
+    "著名学者（院士+IEEE/ACM Fellow）": "Jonathan Li (ieee fellow, The Royal Society of Canada (RSC) Academy of Science, Canadian Academy of Engineering, Engineering Institute of Canada)",
+    "国际期刊主编": "Jonathan Li (International Journal of Applied Earth Observation and Geoinformation)",
+    "国家": "",
+    "所有机构": "nathan Li are with the; Department of Systems Design Engineering, University of WaterlooNanjing University of Aeronautics and Astronautics;  University of Waterloo;  University of  Oxford; Canada; China; UK",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Neural degradation representation learning for all-in-one image restoration",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "",
+    "所有机构": "University of Science and Technology of China (USTC)",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
+  },
+  {
+    "引用论文": "Raindrop clarity: A dual-focused dataset for day and night raindrop removal",
+    "著名学者（院士+IEEE/ACM Fellow）": "",
+    "国际期刊主编": "",
+    "国家": "China",
+    "所有机构": "National University of Singapore; University of Science and Technology of China; University of Electronic Science and Technology of China",
+    "知名荣誉获得者（诺贝尔、图灵奖等）": ""
   }
 ]

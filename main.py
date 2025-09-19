@@ -149,8 +149,8 @@ def get_fellow_authors():
         author_info.append(what_yuanshi)
         author_magazine = loop_input("magazine(主编)")
         author_info.append(author_magazine)
-        reward = loop_input("reward(奖项)")
-        author_info.append(reward)
+        Award = loop_input("Award(奖项)")
+        author_info.append(Award)
         authors_info.append(author_info)
         print(f"Finish registering author: {author_name}\nStart registering next author.\n")
     print("Finish registering all authors.")
@@ -159,7 +159,7 @@ def get_fellow_authors():
 def get_universities():
     universities = []
     while True:
-        university = input("Enter university or organization name, or directly press Enter to finish: ")
+        university = input("Enter university(大学) or organization(机构) name, or directly press Enter to finish: ")
         if university.lower() == '':
             break
         universities.append(university)
@@ -168,7 +168,7 @@ def get_universities():
 def get_countries():
     countries = []
     while True:
-        country = input("Enter country name, or directly press Enter to finish: ")
+        country = input("Enter country(国家) name, or directly press Enter to finish: ")
         if country.lower() == '':
             break
         countries.append(country)
