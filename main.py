@@ -111,7 +111,7 @@ class DataRecorder:
 recorder = DataRecorder()
 
 def get_paper_name():
-    paper_name = input("Enter the paper name: ")
+    paper_name = input("Enter the paper name: \n")
     if paper_name.strip().lower() == '':
         confirm = input("是否确定退出记录页面？y:退出； n:继续记录: ")
         while confirm.strip().lower() not in ('y', 'n'):
@@ -125,7 +125,7 @@ def get_paper_name():
 def loop_input(prompt):
     s = ""
     while True:
-        value = input(f"Enter what {prompt}, or directly press Enter to finish: ")
+        value = input(f"Enter what {prompt}, or directly press Enter to finish: \n")
         if value.lower() == '':
             break
         if s == "":
@@ -139,7 +139,7 @@ def get_fellow_authors():
     authors_info = []
     while True:
         author_info = []
-        author_name = input("Enter author name(作者姓名), or directly press Enter to finish: ")
+        author_name = input("Enter author name(作者姓名), or directly press Enter to finish: \n")
         if author_name.lower() == '':
             break
         author_info.append(author_name)
@@ -159,7 +159,7 @@ def get_fellow_authors():
 def get_universities():
     universities = []
     while True:
-        university = input("Enter university(大学) or organization(机构) name, or directly press Enter to finish: ")
+        university = input("Enter university(大学) or organization(机构) name, or directly press Enter to finish: \n")
         if university.lower() == '':
             break
         universities.append(university)
@@ -168,7 +168,7 @@ def get_universities():
 def get_countries():
     countries = []
     while True:
-        country = input("Enter country(国家) name, or directly press Enter to finish: ")
+        country = input("Enter country(国家) name, or directly press Enter to finish: \n")
         if country.lower() == '':
             break
         countries.append(country)
