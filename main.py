@@ -14,6 +14,7 @@ class DataRecorder:
             "知名荣誉获得者（诺贝尔、图灵奖等）": ""
         }
         self._load_data()
+        self.existing_authors = self._load_existing_authors()
     
     def _load_data(self):
         if os.path.exists(self.json_file):
@@ -38,6 +39,53 @@ class DataRecorder:
             "知名荣誉获得者（诺贝尔、图灵奖等）": ""
         }
     
+    def _load_existing_authors(self):
+        if os.path.exists(self.json_file):
+            with open(self.json_file, 'r', encoding='utf-8') as f:
+                self.data = json.load(f)
+        else:
+            self.data = []
+        existing_authors = {}
+        for entry in self.data:
+            authors = entry.get("著名学者（院士+IEEE/ACM Fellow）", "")
+            authors_list = [s.strip() for s in authors.split("; ") if s]
+            for author in authors_list:
+                if " (" in author:
+                    name, details = author.split(" (", 1)
+                    details = details.rstrip(")")
+                else:
+                    raise ValueError(f"Author format error: {author}")
+                if name in existing_authors:
+                    existing_authors[name]["fellow"] = details
+                else:
+                    existing_authors[name] = {"fellow": details, "editor": "", "award": ""}
+            editors = entry.get("国际期刊主编", "")
+            editors_list = [s.strip() for s in editors.split("; ") if s]
+            for editor in editors_list:
+                if " (" in editor:
+                    name, journal = editor.split(" (", 1)
+                    journal = journal.rstrip(")")
+                else:
+                    raise ValueError(f"Editor format error: {editor}")
+                if name in existing_authors:
+                    existing_authors[name]["editor"] = journal
+                else:
+                    existing_authors[name] = {"fellow": "", "editor": journal, "award": ""}
+            awards = entry.get("知名荣誉获得者（诺贝尔、图灵奖等）", "")
+            awards_list = [s.strip() for s in awards.split("; ") if s]
+            for award in awards_list:
+                if " (" in award:
+                    name, details = award.split(" (", 1)
+                    details = details.rstrip(")")
+                else:
+                    raise ValueError(f"Award format error: {award}")
+                if name in existing_authors:
+                    existing_authors[name]["award"] = details
+                else:
+                    existing_authors[name] = {"fellow": "", "editor": "", "award": details}
+
+        return existing_authors
+
     def _finalize_entry(self):
         if self.current_entry["引用论文"]:
             self.data.append(self.current_entry.copy())
@@ -50,6 +98,7 @@ class DataRecorder:
         
         if paper_name and paper_name.strip():
             self.current_entry["引用论文"] = paper_name.strip()
+            self.existing_authors = self._load_existing_authors()
     
     def get_fellow_authors(self, authors_list):
         fellow_names = []
@@ -120,7 +169,7 @@ def get_paper_name():
             exit()
         else:
             return get_paper_name()
-    return paper_name
+    return paper_name.strip()
 
 def loop_input(prompt):
     s = ""
@@ -129,19 +178,30 @@ def loop_input(prompt):
         if value.lower() == '':
             break
         if s == "":
-            s += value
+            s += value.strip()
         else:
-            s += ", " + value
+            s += ", " + value.strip()
     return s
         
 
-def get_fellow_authors():
+def get_fellow_authors(existing_authors=None):
     authors_info = []
     while True:
         author_info = []
         author_name = input("Enter author name(作者姓名), or directly press Enter to finish: \n")
         if author_name.lower() == '':
             break
+        if existing_authors and author_name in existing_authors:
+            flag = input(f"Author {author_name} already exists. Do you want to use existing info? y: use existing; n: re-enter info: ")
+            while flag.strip().lower() not in ('y', 'n'):
+                flag = input("Invalid input. Please enter y or n: ")
+            if flag.strip().lower() == 'n':
+                print(f"Re-entering info for author: {author_name}")
+            else:
+                author_info = existing_authors[author_name]
+                author_info = [author_name, author_info.get("fellow", ""), author_info.get("academy_member", ""), author_info.get("editor", ""), author_info.get("award", "")]
+                authors_info.append(author_info)
+                continue
         author_info.append(author_name)
         what_fellow = loop_input("fellow")
         author_info.append(what_fellow)
@@ -162,7 +222,7 @@ def get_universities():
         university = input("Enter university(大学) or organization(机构) name, or directly press Enter to finish: \n")
         if university.lower() == '':
             break
-        universities.append(university)
+        universities.append(university.strip())
     return universities
 
 def get_countries():
@@ -171,7 +231,7 @@ def get_countries():
         country = input("Enter country(国家) name, or directly press Enter to finish: \n")
         if country.lower() == '':
             break
-        countries.append(country)
+        countries.append(country.strip())
     return countries
 
 def test():
@@ -194,7 +254,8 @@ def main():
         # 测试第一条完整记录
         paper_name = get_paper_name()
         recorder.get_paper_name(paper_name)
-        authors = get_fellow_authors()
+        recorders_existing_authors = recorder.existing_authors
+        authors = get_fellow_authors(recorders_existing_authors)
         recorder.get_fellow_authors(authors)
         universities = get_universities()
         recorder.get_universities(universities)
